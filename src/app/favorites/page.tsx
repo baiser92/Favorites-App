@@ -24,32 +24,32 @@ export default function FavoritesPage() {
             <header className="mb-12 flex items-center justify-between">
                 <div>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-                        Mis Favoritos
+                        My Favorites
                     </h1>
                     <p className="text-[var(--color-muted)] text-lg max-w-2xl">
-                        Tu colección personal y cuidadosamente seleccionada.
+                        Your personal, carefully curated collection.
                     </p>
                 </div>
                 <Link
                     href="/"
                     className="hidden md:flex text-sm font-medium text-[var(--color-muted)] hover:text-white transition-colors duration-200 bg-[var(--color-card)] px-4 py-2 rounded-lg border border-[var(--color-border)] hover:border-[var(--color-muted)]"
                 >
-                    Volver al inicio
+                    Back to home
                 </Link>
             </header>
 
             {favoriteItems.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-32 border border-dashed border-[var(--color-border)] rounded-3xl bg-[var(--color-card)]/50">
                     <span className="text-6xl mb-6 opacity-50">✨</span>
-                    <h2 className="text-2xl font-semibold text-white mb-3">No tienes favoritos todavía</h2>
+                    <h2 className="text-2xl font-semibold text-white mb-3">You don't have any favorites yet</h2>
                     <p className="text-[var(--color-muted)] text-lg max-w-md text-center mb-8">
-                        Explora la biblioteca principal y guarda los elementos que más te gusten para tenerlos siempre a mano.
+                        Explore the main library and save the items you like the most to always keep them at hand.
                     </p>
                     <Link
                         href="/"
                         className="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-white/90 transition-all duration-200 shadow-lg hover:shadow-white/20 hover:-translate-y-0.5"
                     >
-                        Explorar biblioteca
+                        Explore library
                     </Link>
                 </div>
             ) : (
